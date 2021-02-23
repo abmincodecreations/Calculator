@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+*{
+  box-sizing: border-box;
+}
+.body{
+  width: 100vw;
+  min-height: 100vh;
+  height: fit-content;
+  margin: 0;
+  background-color:rgba(228, 161, 161, 0.966) ;
+  color:rgb(34, 6, 6);
+  display: flex;
+  align-content: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.calculator{
+  background-color:rgb(0, 0, 0) ;
+  width: 240px;
+  height: 400px;
+  margin:0;
+  display: flex;
+  align-self: center;
+  flex-wrap: wrap;
+  box-shadow: 3px 3px 7px rgb(51, 2, 2);
+}
+
+.calculator:hover{
+  width: 240px;
+  height: 398px;
+}
+
+@media only screen and (max-width: 250px) {
+  .calculator{
+    width: 180px;
+    height: 297px;
+  }
+  .calculator:hover{
+    width: 180px;
+    height: 299px;
+  }
+}
+
+
+.display{
+  width:100%;
+  text-align: right;
+  background-color: rgb(0, 0, 0);
+  padding: 0px;
+  font-family: 'Open Sans', sans-serif;
+  font-size:  45px;
+  color:aliceblue;
+  height: 60px;
+}
+
+.button{
+  border-radius: 50%;
+  border: 0px;
+  width: 50px;
+  height: 50px;
+  font-size: medium;
+  margin: 5px;
+  font-family: 'Open Sans', sans-serif;
+}
+@media only screen and (max-width: 250px) {
+  .button{
+    width: 35px;
+    height: 37px;
+  }
+  .display{
+    font-size: 37.5px;
+    min-height: 37px;
+  }  
+}
+button.orange{
+  background-color: rgb(255, 113, 30);
+}
+button.dark-grey{
+  background-color: rgb(59, 55, 55);
+  color: aliceblue;
+}
+button.light-grey{
+  background-color: rgb(165, 146, 146);
+  color: aliceblue;
+}
+
+button.big-h{
+  width: 110px;
+  border-radius: 50px;
+}
+.number-container{
+  width: 75%;
+}
+.operations-container{
+  width: 25%;
+}
+.long-btn{
+  width:98%;
+  border-radius: 50px;
+}
+button:active{
+  transform: scale(0.85);
+}
+button:focus{
+  outline: none;
+  opacity: 0.8;
+}
+.copy-right{
+  font-size: smaller;
+  opacity: 0.95;
+  color: rgb(27, 25, 25);
+  position: relative;
+  align-self: center;
+  text-align: center;
+  
+}
+@media only screen and (max-width: 250px) {
+  button.big-h{
+    width: 80px;
+    border-radius: 37.5px;
+  }
+  .long-btn{
+    border-radius: 35px;
+  }
+  .short-btn{
+    width: 35px;
+    height: 35px;
+  }
+}
+
